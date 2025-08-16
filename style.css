@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+body.light-mode {
+    background: #f4f4f4;
+    color: #000;
+}
+
+body.light-mode .container {
+    background: #e0e0e0;
+}
+
+body.light-mode .editor {
+    background: #d3d3d3;
+}
+
+body.light-mode textarea {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+body.light-mode iframe {
+    border: 2px solid #000;
+}
+
+body.light-mode .container button {
+    background-color: #e0e0e0;
+    color: #000;
+    border: 2px solid #000;
+}
+
+body.light-mode .container button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    background: #0f0f0f;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.container h1 {
+    font-weight: 600;
+    padding: 1rem;
+    transition: 0.3s all ease-in;
+    display: flex;
+    justify-content: center;
+}
+
+.container h1:hover {
+    color: rgb(31, 238, 31);
+    text-decoration: underline;
+}
+
+.container button {
+    background-color: #0f0f0f;
+    color: white;
+    padding: 7px 14px;
+    margin: 5px;
+    border: solid 2px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    transition: 0.3s all ease-in;
+    cursor: pointer;
+}
+
+.container button:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+.editor {
+    background: #272744;
+    text-align: start;
+    display: flex;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.left, .right {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+label i {
+    padding-right: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+    background: #1f1f1f;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    resize: none;
+}
+
+iframe {
+    width: 100%;
+    height: 98%;
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    color: #000;
+}
+
+/* CodeMirror Styles */
+.CodeMirror {
+    height: 300px !important;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+body.light-mode .CodeMirror {
+    border: 2px solid #000;
+}
